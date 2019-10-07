@@ -1,0 +1,12 @@
+export const APP_NAME = 'REDUX-BASE';
+export const ERROR = 'ERROR';
+export const SUCCESS = 'SUCCESS';
+export const START = 'START';
+export const TEMP_PREFIX = 'TEMP';
+export const COMPLETE = 'COMPLETE';
+export const SHOW = 'SHOW';
+export const CLOSE = 'CLOSE';
+export const AUTHORIZATION = 'AUTHORIZATION';
+export const UNAUTHORISED = 'UNAUTHORIZED';
+export const REQUEST_ERROR = 'REQUEST_ERROR';
+export const DATA_PROPERTY = 'data';

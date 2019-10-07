@@ -1,0 +1,3 @@
+src/registerServiceWorker.*
+src/serviceWorker.*
+src/mocks/*

@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "airbnb",
+    "typescript",
+    "typescript/react",
+    "typescript/prettier",
+    "typescript/prettier-react",
+    "prettier",
+    "prettier/react"
+  ],
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "jsx": true,
+    "useJSXTextNode": true
+  },
+  "plugins": [
+    "typescript",
+    "tslint",
+    "prettier",
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "navigator": true,
+    "fetch": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "jest": true,
+    "URLSearchParams": true,
+    "XMLHttpRequest": true,
+    "FormData": true
+  },
+  "rules": {
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": [0],
+    "react/sort-comp": [0],
+    "typescript/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any":"off",
+    "react/default-props-match-prop-types": [0],
+    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "import/prefer-default-export": [0],
+    "prettier/prettier": [
+      "error", {
+        "printWidth": 80,
+        "trailingComma": "all"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js",".tsx",".ts",".jsx"]
+      }
+    }
+  }
+}

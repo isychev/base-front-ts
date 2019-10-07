@@ -1,0 +1,80 @@
+@import "../../scss/custom-variables";
+
+.submenu-enter {
+  margin-top: -2.5rem;
+  opacity: .01;
+}
+.sidebar-counter{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.submenu-enter.submenu-enter-active {
+  margin-top: 0;
+  opacity: 1;
+  transition: margin-top 200ms, opacity 100ms ease-in 200ms;
+}
+
+.submenu-leave {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.submenu-leave.submenu-leave-active {
+  margin-top: -2.5rem;
+  opacity: .01;
+  transition: margin-top 200ms 100ms, opacity 100ms ease-out;
+}
+
+.nav-pills .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+// Pills for custom sidebar
+.nav {
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  position: relative;
+}
+
+
+.nav-pills {
+  .nav-link {
+    color: #d8d8d8;
+    border-left:3px solid transparent;
+    @include hover-focus {
+      color: $nav-pills-link-active-color;
+    }
+    &.active {
+      border-color: $yellow;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav-link.active {
+    color: $nav-pills-link-active-color;
+  }
+
+}
+
+.nav-popover {
+  font-size: $font-size-base;
+
+  .nav-link {
+    color: #000;
+    @include hover-focus {
+      background-color: lighten($blue, 35%);
+    }
+    &.active {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+}
+
